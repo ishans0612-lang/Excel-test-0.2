@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON - Creative Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">N<span>.</span> NEON</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </div>
+        <button class="nav-btn" onclick="showMessage()">Get Started</button>
+    </nav>
+
+    <main id="home">
+        <section class="hero">
+            <div class="tag">✦ NEXT GENERATION DESIGN</div>
+            <h1>Build Something<br><span>Extraordinary.</span></h1>
+            <p>Experience a new level of creativity with modern technology, elegant design and powerful possibilities.</p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="explore()">Explore Now ↗</button>
+                <button class="secondary-btn" onclick="showMessage()">Learn More</button>
+            </div>
+
+            <div class="stats">
+                <div><h2>10K+</h2><small>Users</small></div>
+                <div><h2>98%</h2><small>Satisfaction</small></div>
+                <div><h2>24/7</h2><small>Support</small></div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="section-title">
+                <small>WHAT WE OFFER</small>
+                <h2>Powerful Features</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">✧</div>
+                    <h3>Modern Design</h3>
+                    <p>Beautiful interfaces with premium visual experiences.</p>
+                    <a href="#" onclick="showFeature('Modern Design');return false;">Discover →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Fast Performance</h3>
+                    <p>Optimized experience with smooth interactions.</p>
+                    <a href="#" onclick="showFeature('Fast Performance');return false;">Discover →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">◈</div>
+                    <h3>Fully Responsive</h3>
+                    <p>Works beautifully on mobile, tablet and desktop.</p>
+                    <a href="#" onclick="showFeature('Responsive Design');return false;">Discover →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Ready to create something amazing?</h2>
+            <p>Your next big idea starts here.</p>
+            <button class="primary-btn" onclick="showMessage()">Let's Begin ↗</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">N<span>.</span> NEON</div>
+        <p>© 2026 NEON Studio. Crafted with creativity.</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
